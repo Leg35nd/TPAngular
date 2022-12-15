@@ -1,0 +1,59 @@
+<main role="main" class="pb-3">
+
+  <h1>
+    Yaris 1
+    <small class="text-muted">(Équipement)</small>
+  </h1>
+  <div class="row pb-3 backgroundWhite">
+    <div class="col-4 col-sm-12">
+      <a class="btn btn-secondary  col-10" [routerLink]="['/configuration/equipement/update', 5]">
+        <i class="fas fa-plus-circle"></i> &nbsp;Modifier l'équipement
+      </a>
+    </div>
+  </div>
+
+  <div class="row pb-3 backgroundWhite">
+    <div class="col-6">
+
+      <div class="row">
+        <div class="col-md-7 text-right">
+          Type&nbsp;:
+        </div>
+        <div class="col-md-5 text-left">
+          Linéaire
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-7 text-right">
+          Facteur de conversion&nbsp;:
+        </div>
+        <div class="col-md-5 text-left">
+          0.000184 km
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div>
+        <img src="/images/equipment.png" class="mx-auto d-block">
+        <p>
+          Certains équipements ont des émissions linéaires qui sont directement proportionnelles à leur utilisation.
+        </p>
+        <p>
+          Par exemple, un camion produira toujours la même quantité d’émissions par kilomètre parcouru.
+        </p>
+        <p>
+          Les émissions sont calculées en multipliant le facteur de conversion par l’utilisation de l’équipement durant la période.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="row pb-3 backgroundWhite">
+    <div class="col-4 pb-2 align-items-end">
+      <a class="btn btn-secondary  col-10" [routerLink]="['/configuration/groupe/details', 2]">
+        <i class="fas fa-plus-circle"></i> &nbsp;Retour à Livraison
+      </a>
+    </div>
+  </div>
+
+</main>

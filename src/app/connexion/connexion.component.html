@@ -1,0 +1,15 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>Se connecter</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form (ngSubmit)="login()">
+      <div class="form-group">
+        <input type="email" class="form-control" name="artistname" placeholder="Utilisateur" [(ngModel)]="courriel">
+        <input type="password" class="form-control" name="artistname" placeholder="Mot de passe" [(ngModel)]="motdepasse">
+      </div>
+      <button type="submit" mat-raised-button color="primary" class="btn btn-primary">Connexion</button>
+      <a [routerLink]="['/inscription']" type="button" class="b2" mat-raised-button color="warn">Enregistrement</a>
+    </form>
+  </mat-card-content>
+</mat-card>

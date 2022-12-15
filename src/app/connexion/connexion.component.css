@@ -1,0 +1,26 @@
+.example-card {
+  width: 500px;
+  height: 250px;
+  background-color: #87ceeb;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: auto;
+}
+button{
+  margin-top: 15px;
+  margin-left: 170px;
+}
+.b2{
+  margin-top: 15px;
+  margin-left: 160px;
+}
+input{
+  margin-top: 5px;
+}
+.mat-card-title{
+  margin-left: 150px;
+}

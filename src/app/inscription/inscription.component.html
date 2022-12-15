@@ -1,0 +1,17 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>S'enregistrer</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form (ngSubmit)="register()">
+      <div class="form-group">
+        <input type="email" class="form-control" name="artistname" placeholder="Courriel" [(ngModel)]="courriel">
+        <input type="text" class="form-control" name="artistname" placeholder="Utilisateur" [(ngModel)]="utilisateur">
+        <input type="password" class="form-control" name="artistname" placeholder="Mot de passe" [(ngModel)]="motdepasse">
+        <input type="password" class="form-control" name="artistname" placeholder="Mot de passe validation" [(ngModel)]="motdepasseRetry">
+      </div>
+      <button type="submit" mat-raised-button color="primary" class="btn btn-primary">Créer compte</button>
+    </form>
+  </mat-card-content>
+</mat-card>
+
